@@ -4,6 +4,8 @@
  */
 package uf2practica9.pablo.ruben;
 
+import utils.Utils;
+
 /**
  *
  * @author ausias
@@ -15,6 +17,21 @@ public class Exercici3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int numero1 = Utils.LlegirInt();
+        int numero2 = Utils.LlegirInt();
+        int resultat = Multiplicar(numero1, numero2);
+        
+        System.out.println("El resultat de la multiplicació és: " + resultat);
+    }
+    
+    static int MultiplicarParell(int num1, int num2){
+        int resultat = 0;
+        
+        return resultat;
+    }
+    
+    static int MultiplicarSenar(int num1, int num2){
+        
     }
     
 }
