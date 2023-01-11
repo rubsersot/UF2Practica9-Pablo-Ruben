@@ -9,10 +9,20 @@ public class Exercici2 {
 
     public static int euclides(int numA, int numB) {
         int resultat;
-        if (numB==0)
-            resultat = numA;  
-        else 
-            resultat =  euclides(numB, numA%numB);
+        //Casos base 0, 1 i si els nombres són iguals
+        if (numA == 0 || numB==0)
+            resultat = 0;  
+        else if(numA == 1 || numB == 1){
+            resultat = 1;
+        }
+        else if(numA == numB){
+            resultat = numA;
+        }
+        else{
+            //Al màxim li restem el mínim i tornem a realitzar la funció amb la resta i el que era el més petit dels dos
+            resultat = euclides(Math.max(numA, numB)-Math.min(numA, numB), Math.min(numA, numB));
+        }
+
         return resultat;
     }
 
