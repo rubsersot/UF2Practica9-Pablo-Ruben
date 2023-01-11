@@ -8,10 +8,12 @@ public class Exercici2 {
    
 
     public static int euclides(int numA, int numB) {
+        int resultat;
         if (numB==0)
-            return numA;  
+            resultat = numA;  
         else 
-            return euclides(numB, numA%numB);     
+            resultat =  euclides(numB, numA%numB);
+        return resultat;
     }
 
     public static void main(String[] args) {

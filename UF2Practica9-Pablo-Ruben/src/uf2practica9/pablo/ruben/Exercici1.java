@@ -17,6 +17,7 @@ public class Exercici1 {
         int n = Utils.LlegirInt();
         System.out.println("Ingresa el numero X: ");
         double x = Utils.LlegirInt();
+        System.out.println("Resultat: " + m4(n));
         
     }
 
@@ -36,5 +37,27 @@ public class Exercici1 {
             result += i;
         }
         return result;
+    }
+    
+    //Problema c
+    static int m3(int n){
+        int resultat = 0;
+        
+        for(int i = n; i >= 2; i/=2){
+            resultat += 1;
+        }
+        
+        return resultat;
+    }
+    
+    //Problema d
+    static int m4(int n){
+        int resultat = 0;
+        
+        for(int i = n; i > 0; i /= 10){
+            resultat += i%10;
+        }
+        
+        return resultat;
     }
 }
